@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer type="text/javascript" src="js/scripts.js"></script>
+	<title>Fruit List</title>
+</head>
+
+<body>
+	<div class="form">
+		<fieldset>
+			<legend>Adicionar itens</legend>
+			<form>
+				<input type="text" id="desc" name="desc" placeholder="Descrição do item">
+				<input type="number" id="valueA" name="valueA" placeholder="Valor item A">
+				<input type="number" id="valueB" name="valueB" placeholder="Valor item B">
+				<input id="form-btn" type="button" onclick="addItem(desc.value, valueA.value, valueB.value)" value="Adicionar">
+			</form>
+		</fieldset>
+	</div>
+	<div id="div-table">
+		<table id="tb">
+			<thead>
+				<tr>
+					<th>Código</th>
+					<th>Descrição</th>
+					<th>A</th>
+					<th>B</th>
+					<th>Ação</th>
+				</tr>
+			</thead>
+
+		</table>
+	</div>
+
+</body>
+
+</html>
